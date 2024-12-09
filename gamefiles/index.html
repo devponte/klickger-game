@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Klickger</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Use the same mouse icon as favicon -->
+  <link rel="icon" href="https://i.postimg.cc/N0VGrtNK/image-2024-12-09-144615718-removebg-preview.png" type="image/png">
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1>Klickger</h1>
+    <p id="clickCount">0</p>
+  </header>
+  <main>
+    <div id="clickArea">
+      <img src="https://i.postimg.cc/N0VGrtNK/image-2024-12-09-144615718-removebg-preview.png"
+           id="clickButton"
+           alt="Click here to gain points!">
+    </div>
+    <aside id="upgrades">
+      <h2>Upgrades</h2>
+      <button id="autoClicker" class="upgrade-button">Auto Clicker (Cost: 10)</button>
+      <button id="multiplier" class="upgrade-button">Multiplier x2 (Cost: 20)</button>
+    </aside>
+  </main>
+  <div id="leaderboard" class="leaderboard">
+    <h2>Leaderboard</h2>
+    <!-- Leaderboard content will be dynamically loaded here -->
+  </div>
+</div>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
